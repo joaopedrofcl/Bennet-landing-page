@@ -1,0 +1,62 @@
+
+.graficos {
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh; 
+  padding-top: 80px; 
+  text-align: center; 
+}
+
+.graficos h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.graficos h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+
+.graficos__chart {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.graficos__line-chart,
+.graficos__bar-chart {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+
+.graficos__line-chart h4,
+.graficos__bar-chart h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .graficos__chart {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .graficos__line-chart,
+  .graficos__bar-chart {
+      width: 100%;
+  }
+}
